@@ -1,51 +1,33 @@
 @import '~/src/styles/media-queries.scss';
 
 .button {
+  display: inline-block;
   cursor: pointer;
   border: none;
   border-radius: 6px;
-  color: #FFFFFF;
-  padding: 20px 0px;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
-  outline: none;
-
-  &:disabled {
-    cursor: not-allowed;
-  }
-
-  @include for-phone-only {
-    padding: 11px 0px;
-  }
-}
-
-.blue {
-  background-color: #4054ED;
-
-  &:disabled {
-    background: #E5E5E5;
-    color: #464D6C;
-    border: #272C49;
-  }
-}
-
-.transparent {
-  border: 0px;
-  background-color: transparent;
-}
-
-.link {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 19px;
-  padding: 0;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  width: auto;
-  border: none;
+  padding: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
   text-align: center;
-  color: #4054ED
+  user-select: none;
+
+  &:disabled, &[disabled] {
+    cursor: default !important;
+    pointer-events: none;
+  }
+
+  &.primary {
+    color: #FFF;
+    background-color: #8224E3;
+  }
+
+  &.bright-green {
+    color: #FFF;
+    background-color: #74D66F;
+  }
+
+  &.as_a {
+    text-decoration: none;
+  }
 }

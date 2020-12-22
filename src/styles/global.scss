@@ -10,12 +10,14 @@ html, body {
   height: 100%;
   font-family: 'Montserrat', 'Courier New', Courier, monospace;
   font-size: 16px;
+  font-weight: 400;
 }
 
-h2 {
-  font-family: Nunito;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 55px;
-  color: #464D6C;
+a {
+  text-decoration: none;
+  color: #3F98EB;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
