@@ -1,0 +1,21 @@
+@import "normalize.css";
+@import "./fa-fonts.min.css";
+@import "./Montserrat.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Montserrat', 'Courier New', Courier, monospace;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: Nunito;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 55px;
+  color: #464D6C;
+}

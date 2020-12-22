@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "covid-research-e15aa"
+  },
+  "targets": {
+    "covid-research-e15aa": {
+      "hosting": {
+        "testing": [
+          "covid-research-e15aa"
+        ],
+        "production": [
+          "covid-research"
+        ]
+      }
+    }
+  }
+}

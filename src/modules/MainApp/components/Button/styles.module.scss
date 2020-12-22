@@ -1,0 +1,51 @@
+@import '~/src/styles/media-queries.scss';
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  color: #FFFFFF;
+  padding: 20px 0px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  outline: none;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  @include for-phone-only {
+    padding: 11px 0px;
+  }
+}
+
+.blue {
+  background-color: #4054ED;
+
+  &:disabled {
+    background: #E5E5E5;
+    color: #464D6C;
+    border: #272C49;
+  }
+}
+
+.transparent {
+  border: 0px;
+  background-color: transparent;
+}
+
+.link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 19px;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  width: auto;
+  border: none;
+  text-align: center;
+  color: #4054ED
+}

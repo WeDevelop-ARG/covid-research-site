@@ -1,0 +1,11 @@
+{
+  "target": "esnext",
+  "module": "esnext",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  }
+}

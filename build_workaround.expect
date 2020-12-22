@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+
+# exp_internal 1
+system rm -rf dist .parcel-cache .firebase
+set timeout 60
+spawn npm start -- --no-hmr
+expect -re "Built in " exit
