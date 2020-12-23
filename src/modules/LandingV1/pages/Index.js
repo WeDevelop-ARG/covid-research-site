@@ -41,8 +41,8 @@ function Index () {
         <section className={classes.ourResearch}>
           <h2>Our research</h2>
           <h3>Have you asked yourself any of the above questions?</h3>
-          <p>We have. And we decided to go outside (not literally, doh) and talk to real people to understand this a little more.</p>
-          <p>We've been doing this for a while now (since October 2020, to be exact), and we've gotten many data that we'll share as soon as we conclude with this research period.</p>
+          <p>We have. And we decided to go outside (not literally, doh) and <strong>talk to real people</strong> to understand this a little more.</p>
+          <p>We've been doing this for a while now (since October 2020, to be exact), and <strong>we've gotten many data that we'll share</strong> as soon as we conclude with this research period.</p>
         </section>
         <section className={classes.quotes}>
           <figure>
