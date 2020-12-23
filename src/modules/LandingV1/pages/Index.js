@@ -16,7 +16,7 @@ function Index () {
     <div className={classes.landingV1}>
       <header>
         <a href='https://wedevelop.me' target='_blank' rel='noreferrer'>
-          <img src={WeDevelopLogo} alt='WeDevelop logo' title='WeDevelop' className={classes.logo} />
+          <img src={WeDevelopLogo} alt='WeDevelop logo' className={classes.logo} />
         </a>
         <nav>
           <ul>
