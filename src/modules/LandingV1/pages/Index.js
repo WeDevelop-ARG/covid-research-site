@@ -21,7 +21,7 @@ function Index () {
         <nav>
           <ul>
             <li>
-              <a href='#' className={classes.selected}>Our research</a>
+              <a href='#'>Our research</a>
             </li>
             <li>
               <a href='#'>About us</a>
@@ -69,22 +69,23 @@ function Index () {
         </section>
       </article>
       <footer>
+        <h2 className={classes.titleMobileUp}>About us</h2>
         <figure>
-          <img src={PurplePin} alt='' role='presentational' className={classes.purplePin} />
-          <img src={OurTeam} alt='Our team' title='Our team' className={classes.image} />
+          <img src={PurplePin} alt='' role='presentation' className={classes.purplePin} />
+          <img src={OurTeam} alt='Our team' className={classes.image} />
           <figcaption>
             Tandil, Buenos Aires, Argentina
           </figcaption>
         </figure>
         <div>
-          <h2>About us</h2>
+          <h2 className={classes.titleDesktopUp}>About us</h2>
           <h3>We are WeDevelop</h3>
           <p>An Argentina-based company that makes Custom Software Development for businesses around the globe.</p>
           <p>Argentinians are known for being warm and people-people. We are not the exception. We love talking and: listening.</p>
           <address>
-            <a href='#'>
+            <a href='https://wedevelop.me' target='_blank' rel='noreferrer' title='Learn more about WeDevelop'>
               Learn more
-              <i className={classnames('far', 'fa-arrow-right', classes.arrow)} alt='' role='presentational' />
+              <i className={classnames('far', 'fa-arrow-right', classes.arrow)} alt='' role='presentation' />
             </a>
           </address>
         </div>
