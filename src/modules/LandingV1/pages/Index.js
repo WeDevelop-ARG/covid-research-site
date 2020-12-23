@@ -16,18 +16,18 @@ function Index () {
     <div className={classes.landingV1}>
       <header>
         <a href='https://wedevelop.me' target='_blank' rel='noreferrer'>
-          <img src={WeDevelopLogo} alt='WeDevelop logo' title='WeDevelop' className={classes.logo} />
+          <img src={WeDevelopLogo} alt='WeDevelop logo' className={classes.logo} />
         </a>
         <nav>
           <ul>
             <li>
-              <a href='#' className={classes.selected}>Our research</a>
+              <a href='#our_research'>Our research</a>
             </li>
             <li>
-              <a href='#'>About us</a>
+              <a href='#about_us'>About us</a>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <a href='#contact'>Contact</a>
             </li>
           </ul>
         </nav>
@@ -36,9 +36,9 @@ function Index () {
         <section className={classes.cover}>
           <h1>The world has changed, so have businesses</h1>
           <p>How have companies been doing during the pandemic times? What differentiates a company that found success on COVID-19 times and a company that failed?</p>
-          <Button as='a' href='#' className={classes.cta}>I'd like to participate</Button>
+          <Button as='a' href='https://mc.covid-research.wedevelop.me/signup' className={classes.cta}>I'd like to participate</Button>
         </section>
-        <section className={classes.ourResearch}>
+        <section className={classes.ourResearch} id='our_research'>
           <h2>Our research</h2>
           <h3>Have you asked yourself any of the above questions?</h3>
           <p>We have. And we decided to go outside (not literally, doh) and <strong>talk to real people</strong> to understand this a little more.</p>
@@ -60,33 +60,32 @@ function Index () {
             </div>
           </figure>
         </section>
-        <section className={classes.joinResearch}>
+        <section className={classes.joinResearch} id='contact'>
           <h2>Want to join the research?</h2>
           <p>Cool. Join us in a 20-minute interview and get access to exclusive data coming out from this research.</p>
-          <Button as='a' variant='bright-green' href='#' className={classes.cta}>
+          <Button as='a' variant='bright-green' href='https://mc.covid-research.wedevelop.me/signup' className={classes.cta}>
             I'd like to participate
           </Button>
         </section>
       </article>
-      <footer>
+      <footer id='about_us'>
+        <h2 className={classes.titleMobileUp}>About us</h2>
         <figure>
-          <img src={PurplePin} alt='' role='presentational' className={classes.purplePin} />
-          <img src={OurTeam} alt='Our team' title='Our team' className={classes.image} />
+          <img src={PurplePin} alt='' role='presentation' className={classes.purplePin} />
+          <img src={OurTeam} alt={'An image of WeDevelop\'s team'} className={classes.image} />
           <figcaption>
             Tandil, Buenos Aires, Argentina
           </figcaption>
         </figure>
         <div>
-          <h2>About us</h2>
+          <h2 className={classes.titleDesktopUp}>About us</h2>
           <h3>We are WeDevelop</h3>
           <p>An Argentina-based company that makes Custom Software Development for businesses around the globe.</p>
           <p>Argentinians are known for being warm and people-people. We are not the exception. We love talking and: listening.</p>
-          <address>
-            <a href='#'>
-              Learn more
-              <i className={classnames('far', 'fa-arrow-right', classes.arrow)} alt='' role='presentational' />
-            </a>
-          </address>
+          <a href='https://wedevelop.me' target='_blank' rel='noreferrer' alt='About WeDevelop' className={classes.aboutWeDevelop}>
+            Learn more
+            <i className={classnames('far', 'fa-arrow-right', classes.arrow)} alt='' role='presentation' />
+          </a>
         </div>
       </footer>
     </div>
