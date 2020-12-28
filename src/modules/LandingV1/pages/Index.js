@@ -82,7 +82,7 @@ function Index () {
           <h3>We are WeDevelop</h3>
           <p>An Argentina-based company that makes Custom Software Development for businesses around the globe.</p>
           <p>Argentinians are known for being warm and people-people. We are not the exception. We love talking and: listening.</p>
-          <a href='https://wedevelop.me' target='_blank' rel='noreferrer' alt='About WeDevelop' className={classes.aboutWeDevelop}>
+          <a href='https://wedevelop.me' target='_blank' rel='noreferrer' title='About WeDevelop' className={classes.aboutWeDevelop}>
             Learn more
             <i className={classnames('far', 'fa-arrow-right', classes.arrow)} alt='' role='presentation' />
           </a>
