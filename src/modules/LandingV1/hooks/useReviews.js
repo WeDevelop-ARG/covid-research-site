@@ -11,8 +11,17 @@ import LaythSanjaq from '../assets/layth_sanjaq.jpeg'
 import EliasGroll from '../assets/elias_groll.jpeg'
 import DanielMarcos from '../assets/daniel_marcos.jpeg'
 import KamilSattar from '../assets/kamil_sattar.jpeg'
+import CarinaBostonPinales from '../assets/carina_boston_pinales.jpeg'
 
 const reviews = [
+  {
+    profileImageURL: CarinaBostonPinales,
+    name: 'Carina Boston Pinales',
+    quote: 'We had many people depending on us; we had to provide information to our community before anyone else. It was very challenging to tell people that the world is going to change.',
+    position: 'Founder & Co-Owner',
+    company: 'Splash Coworking LLC',
+    address: 'San Antonio, Texas'
+  },
   {
     profileImageURL: DanielMarcos,
     name: 'Daniel Marcos',
