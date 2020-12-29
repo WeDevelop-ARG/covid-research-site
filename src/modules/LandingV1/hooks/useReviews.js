@@ -89,7 +89,7 @@ const reviews = [
   {
     profileImageURL: MatthewKarsten,
     name: 'Matthew Karsten',
-    quote: 'In my industry, digitization of audiovisual production and other content, everything that I thought was going to happen in the next 5 years, now happened in 2020, due to the pandemic.',
+    quote: 'In my industry, digitalization of audiovisual production and other content, everything that I thought was going to happen in the next 5 years, now happened in 2020, due to the pandemic.',
     position: 'Founder',
     company: 'Purple Squirrel Media',
     address: 'Niles, Michigan'
