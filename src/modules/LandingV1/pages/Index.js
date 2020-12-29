@@ -1,17 +1,21 @@
 import React from 'react'
 import classnames from 'classnames'
+import { Slide } from 'react-slideshow-image'
+import 'react-slideshow-image/dist/styles.css'
 
 import Button from '~/src/modules/MainApp/components/Button'
+
+import useReviews from '../hooks/useReviews'
 
 import WeDevelopLogo from '~/src/assets/wedevelop_logo_white.svg'
 import PurplePin from '~/src/assets/purple_pin.svg'
 import OurTeam from '~/src/assets/our_team.jpg'
 
-import AlbertoArias from '../assets/alberto_arias.jpeg'
-
 import classes from './styles.module.scss'
 
 function Index () {
+  const { reviews } = useReviews()
+
   return (
     <div className={classes.landingV1}>
       <header>
@@ -45,20 +49,35 @@ function Index () {
           <p>We've been doing this for a while now (since October 2020, to be exact), and <strong>we've gotten many data that we'll share</strong> as soon as we conclude with this research period.</p>
         </section>
         <section className={classes.quotes}>
-          <figure>
-            <div className={classes.profileImage}>
-              <img src={AlbertoArias} alt='Profile image of Alberto Arias' title='Alberto Arias' />
-            </div>
-            <div className={classes.description}>
-              <blockquote>
-                Technology must have a soul not only a goal, I saw all my work accelerate. Everything I planned for three or four years goals, happend in one year.
-              </blockquote>
-              <figcaption>
-                <cite className={classes.author}>Alberto Arias</cite>
-                Director Global Head HX/CX Transformation at <strong>Dell</strong>
-              </figcaption>
-            </div>
-          </figure>
+          <Slide
+            duration={5000}
+            transitionDuration={500}
+            pauseOnHover
+            prevArrow={<i className={classnames(classes.carouselArrow, 'far fa-chevron-left')} />}
+            nextArrow={<i className={classnames(classes.carouselArrow, 'far fa-chevron-right')} />}
+            className={classes.carousel}
+          >
+            {reviews.map(review => (
+              <figure>
+                <div className={classes.profileImage}>
+                  <img
+                    src={review.profileImageURL}
+                    alt={`Profile image of ${review.name}`}
+                    title={review.name}
+                  />
+                </div>
+                <div className={classes.description}>
+                  <blockquote>{review.quote}</blockquote>
+                  <figcaption>
+                    <cite className={classes.author}>{review.name}</cite>
+                    {review.position} at <strong>{review.company}</strong>
+                    <br />
+                    {review.address}
+                  </figcaption>
+                </div>
+              </figure>
+            ))}
+          </Slide>
         </section>
         <section className={classes.joinResearch} id='contact'>
           <h2>Want to join the research?</h2>
