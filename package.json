@@ -8,8 +8,8 @@
     "build": "parcel build ./src/index.html",
     "lint": "eslint . || true",
     "lint:fix": "eslint --fix . || true",
-    "deploy:testing": "expect build_workaround.expect && firebase deploy --only hosting:testing",
-    "deploy:production": "expect build_workaround.expect && firebase deploy --only hosting:production"
+    "deploy:testing": "PUBLIC_URL=\"https://testing.covid-research.wedevelop.me\" expect build_workaround.expect && firebase deploy --only hosting:testing",
+    "deploy:production": "PUBLIC_URL=\"https://covid-research.wedevelop.me\" expect build_workaround.expect && firebase deploy --only hosting:production"
   },
   "browserslist": "> 0.25%, not ie 11, not op_mini all",
   "author": "",
