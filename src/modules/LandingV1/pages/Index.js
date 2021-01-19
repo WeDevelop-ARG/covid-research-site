@@ -39,7 +39,7 @@ function Index () {
       <article>
         <section className={classes.cover}>
           <h1>The world has changed, so have businesses</h1>
-          <p>How have companies been doing during the pandemic times? What differentiates a company that found success on COVID-19 times and a company that failed?</p>
+          <p>How have companies been doing during pandemic times? What differentiates a company that found success on COVID-19 times and a company that failed?</p>
           <Button as='a' href='https://mc.covid-research.wedevelop.me/signup' className={classes.cta}>I'd like to participate</Button>
         </section>
         <section className={classes.ourResearch} id='our_research'>
