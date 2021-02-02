@@ -11,8 +11,17 @@ import EliasGroll from '../assets/elias_groll.jpeg'
 import DanielMarcos from '../assets/daniel_marcos.jpeg'
 import KamilSattar from '../assets/kamil_sattar.jpeg'
 import CarinaBostonPinales from '../assets/carina_boston_pinales.jpeg'
+import TamerShawadfy from '../assets/tamer_shawadfy.jpg'
 
 const reviews = [
+  {
+    profileImageURL: TamerShawadfy,
+    name: 'Tamer Shawadfy',
+    quote: 'As the pandemic hit hard on hospitality, our vertical, I am amazed by how we have been able to handle the business remotely. The biggest challenge has been to keep a good relationship with customers. The key is to be open-minded and flexible.',
+    position: 'Senior Hospitality',
+    company: 'Oracle Products Solution',
+    address: 'Egypt'
+  },
   {
     profileImageURL: CarinaBostonPinales,
     name: 'Carina Boston Pinales',
