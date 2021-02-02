@@ -1,7 +1,6 @@
 import { shuffle } from 'lodash'
 
 import AlbertoArias from '../assets/alberto_arias.jpeg'
-import AlexanderBetit from '../assets/alexander_betit.jpeg'
 import MatthewKarsten from '../assets/matthew_karsten.jpeg'
 import DaveQuinn from '../assets/dave_quinn.jpeg'
 import CalebStuart from '../assets/caleb_stuart.jpeg'
@@ -29,14 +28,6 @@ const reviews = [
     position: 'Co-Founder & CEO',
     company: 'Growth Institute',
     address: 'Toronto, Canada'
-  },
-  {
-    profileImageURL: AlexanderBetit,
-    name: 'Alexander Betit',
-    quote: 'We are at a unique spot, we are an accelerator for digital news, and this is the best time ever. It is hard to be a startup in pandemic times, but our market is growing, and the demand is here.',
-    position: 'Revenue Manager',
-    company: 'Nicklpass',
-    address: 'New York City Metropolitan Area'
   },
   {
     profileImageURL: EliasGroll,
@@ -101,14 +92,6 @@ const reviews = [
     position: 'Co-Founder & COO',
     company: 'Oyster',
     address: 'Dallas, Texas'
-  },
-  {
-    profileImageURL: AlexanderBetit,
-    name: 'Alexander Betit',
-    quote: 'We are at a unique spot, we are an accelerator for digital news, and this is the best time ever. It is hard to be a startup in pandemic times, but our market is growing, and the demand is here.',
-    position: 'Revenue Manager',
-    company: 'Nicklpass',
-    address: 'New York City Metropolitan Area'
   },
   {
     profileImageURL: AlbertoArias,

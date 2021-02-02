@@ -57,8 +57,8 @@ function Index () {
             nextArrow={<i className={classnames(classes.carouselArrow, 'far fa-chevron-right')} />}
             className={classes.carousel}
           >
-            {reviews.map(review => (
-              <figure>
+            {reviews.map((review, i) => (
+              <figure key={i}>
                 <div className={classes.profileImage}>
                   <img
                     src={review.profileImageURL}
