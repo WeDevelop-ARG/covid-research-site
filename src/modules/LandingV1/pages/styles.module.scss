@@ -151,19 +151,6 @@
     text-align: center;
     padding-bottom: 85px;
 
-    /*&::before {
-      content: "";
-      display: block;
-      margin: 0 auto;
-      width: 150px;
-      height: 45px;
-      background-image: url('~/src/assets/dots_8x3.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      margin-top: 8px;
-    }*/
-
     & > * {
       max-width: 1070px;
       margin: 0 auto;
@@ -211,21 +198,6 @@
       position: relative;
       padding-left: 116px;
       padding-right: 116px;
-
-      &::before,
-      /*&::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 88px;
-        height: 102px;
-        background-image: url('~/src/assets/dots_5x6.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-      }*/
 
       &::before {
         left: 8px;
@@ -313,7 +285,7 @@
           font-size: 25px;
           line-height: 25px;
           font-weight: 600;
-          color: #416CB4;          ;
+          color: #416CB4;
           font-style: normal;
           margin-bottom: 10px;
         }
@@ -377,19 +349,6 @@
       flex-direction: row;
       justify-content: center;
       padding: 60px 8px 90px;
-
-      &::before,
-      /*&::after {
-        content: "";
-        display: inline-block;
-        width: 88px;
-        height: 102px;
-        background-image: url('~/src/assets/dots_5x6.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        flex-shrink: 0;
-      }*/
 
       &::before {
         margin-right: 65px;
