@@ -82,7 +82,7 @@ function Index () {
         <section className={classes.joinResearch} id='contact'>
           <h2>Want to join the research?</h2>
           <p>Cool. Join us in a 20-minute interview and get access to exclusive data coming out from this research.</p>
-          <Button as='a' variant='bright-green' href='https://mc.covid-research.wedevelop.me/signup' className={classes.cta}>
+          <Button as='a' variant='primary' href='https://mc.covid-research.wedevelop.me/signup' className={classes.cta}>
             I'd like to participate
           </Button>
         </section>
